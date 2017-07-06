@@ -176,7 +176,7 @@ function getVideos(doc) {
 
 			videoObj = { url: video, secureUrl: videoSecureUrl, type: videoType, width: width, height: height };
 			if(videoType.indexOf("video/") === 0) {
-				vidoes.splice(0, 0, videoObj);
+				videos.unshift(videoObj);
 			} else {
 				videos.push(videoObj);
 			}
